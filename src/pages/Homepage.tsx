@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react'
 import { useDispatch } from 'react-redux'
 import { requestMovie } from '../redux/reducers/movieReducer';
+import { requestWeather } from '../redux/reducers/weatherReducer';
 
 const HomePage = () => {
 
@@ -8,7 +9,7 @@ const HomePage = () => {
 
     useEffect(() => {
       
-      dispatch(requestMovie())
+      dispatch(requestWeather())
      
     }, [])
     
